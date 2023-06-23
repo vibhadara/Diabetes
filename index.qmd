@@ -1,11 +1,32 @@
 ---
-title: "class-2023-06-22"
+title: "Baby Names"
+execute: 
+  echo: false
+  warning: false
+  message: false
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+This is an example using the baby names data.
 
 ```{r}
-1 + 1
+library(tidyverse)
+library(babynames)
 ```
+
+```{r}
+babynames|>
+  filter(str_detect(name, "i$")) |>
+    summarize(sum_n = sum(n), 
+            sum_prop = sum(prop), 
+            .by = c(year, sex)) |>
+    ggplot(aes(x = year, y = sum_prop, fill = sex)) + 
+    geom_area() +
+    scale_y_continuous(labels = scales::percent_format()) + 
+    labs(title = "US Names Ending With -i", 
+         subtitle = " Males names ending with -i rapidly spiked in 2000s \n The female names ending with -i had a peak around the 1960s", 
+         x = "Year", 
+         y = "Percent of Names That End in -i", 
+         fill = "Sex", 
+         )
+```
+
