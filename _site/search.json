@@ -7,11 +7,25 @@
     "text": "About Me\nHello! My name is Vibha Dara and I am a rising senior at Neuqua Valley High School in Illinois. I am very passionate about Computer Science and Statistics which is what I hope to be majoring in and working in in the future. My hobbies include swimming, playing badminton, listening to music, and hanging out with friends."
   },
   {
+    "objectID": "about.html#contact-information",
+    "href": "about.html#contact-information",
+    "title": "About",
+    "section": "Contact Information",
+    "text": "Contact Information\nEmail: vibhadara24@gmail.com"
+  },
+  {
+    "objectID": "about.html#github-repository",
+    "href": "about.html#github-repository",
+    "title": "About",
+    "section": "Github Repository",
+    "text": "Github Repository\nhttps://github.com/vibhadara/Diabetes"
+  },
+  {
     "objectID": "about.html#about-this-project",
     "href": "about.html#about-this-project",
     "title": "About",
     "section": "About This Project",
-    "text": "About This Project\nI was able to make this website through the Kane’s Free Data Science Course which teaches the basics of data science and statistics!"
+    "text": "About This Project\nI was able to make this website through the Kane’s Free Data Science Course which teaches the basics of data science and statistics with R!"
   },
   {
     "objectID": "index.html#introduction",
