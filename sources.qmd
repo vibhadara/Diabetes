@@ -1,0 +1,22 @@
+---
+title: "Sources"
+styles:
+  title:
+    "font-size": "50px"
+---
+
+ 
+
+# Data
+
+------------------------------------------------------------------------
+
+I got my datasets off of Kaggle and below are all the links I used for this website.
+
+# URLs
+
+------------------------------------------------------------------------
+
+-   [https://www.kaggle.com/datasets/akshaydattatraykhare/diabetes-dataset](https://www.kaggle.com/datasets/akshaydattatraykhare/diabetes-dataset)
+-   [https://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-dataset](https://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-dataset)
+-   [https://www.cdc.gov/diabetes/library/reports/reportcard/national-state-diabetes-trends.html](https://www.cdc.gov/diabetes/library/reports/reportcard/national-state-diabetes-trends.html)

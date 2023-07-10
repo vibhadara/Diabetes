@@ -2,16 +2,24 @@ project:
   type: website
 
 website:
-  title: "class-2023-06-22"
+  title: "Diabetes"
   navbar:
-    left:
+    right:
       - href: index.qmd
         text: Home
+      - href: sources.qmd
+        text: Sources
       - about.qmd
-
+      - icon: github
+        href: https://github.com/
+        aria-label: GitHub
+      
+      
 format:
   html:
     theme: cosmo
+    fontsize: 1.14em
+    linestretch: 1.8
     css: styles.css
     toc: true
 

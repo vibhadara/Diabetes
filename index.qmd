@@ -1,33 +1,129 @@
 ---
-title: "Baby Names"
+title: "Diabetes Analysis"
 execute: 
   echo: false
-  warning: false
   message: false
+  warning: false
 ---
 
-This is an example using the baby names data.
-
 ```{r}
+library(dplyr)
+library(readr)
+library(remotes)
+library(primer.data)
 library(tidyverse)
-library(babynames)
-library(knitr)
+x <- read_csv("data/diabetes_prediction_dataset.csv")
+y <- read_csv("data/diabetes.csv")
+```
+
+ 
+
+## Introduction
+
+According to the Centers for Disease Control and Prevention (CDC), diabetes is one of the top 10 leading causes of death in the U.S. and more than 37 million people in the U.S. have diabetes. Below is an image of how diabetes among Americans is growing immensely as the years go on. I'll first see if diabetes is more prevalent in a particular age or gender and then analyze potential factors that contribute to this disease.
+
+![](map-d.PNG){fig-align="center"}
+
+ 
+
+## Age and Gender
+
+```{r}
+ag_x <- x |>
+  mutate(diabetes = replace(diabetes, diabetes == 0, NA)) |>
+  drop_na()|>
+  select(gender, age, diabetes)  
+ig_y <- y |>
+  drop_na() |>
+  select(Glucose, Insulin, Outcome)
+bmi_y <- y |>
+    drop_na() |>
+    select(BMI, Outcome)
+bp_y <- y |>
+  drop_na() |>
+  select(BloodPressure, Outcome)
 ```
 
 ```{r}
-babynames|>
-  filter(str_detect(name, "i$")) |>
-    summarize(sum_n = sum(n), 
-            sum_prop = sum(prop), 
-            .by = c(year, sex)) |>
-    ggplot(aes(x = year, y = sum_prop, fill = sex)) + 
-    geom_area() +
-    scale_y_continuous(labels = scales::percent_format()) + 
-    labs(title = "US Names Ending With -i", 
-         subtitle = " Males names ending with -i rapidly spiked in 2000s \n The female names ending with -i had a peak around the 1960s", 
-         x = "Year", 
-         y = "Percent of Names That End in -i", 
-         fill = "Sex", 
-         )
+ag_x |>
+  ggplot(aes(x = age, fill = gender)) +
+  geom_histogram(bins = 25) +
+  scale_fill_manual(values = c("#bfabd6", "#77b2ed")) +
+  labs(title = "Age and Gender Distribution of People with Diabetes", 
+       x = "Age", 
+       y = "", 
+       fill = "Gender" ) +
+  theme_classic()
 ```
 
+**Take-away:** It is more common for females to have diabetes than males. As age increases, the likeliness of getting diabetes becomes higher and higher. There is a spike at around 80 years old with almost 14 percent of the sample having the disease.
+
+ 
+
+## Factors 1 & 2
+
+```{r}
+ig_y |>
+  ggplot(aes(x = Glucose, y = Insulin, color = factor(Outcome))) +
+  geom_smooth(method = "loess", formula = y ~ x, se = FALSE) +
+  scale_color_manual(values = c("#bfabd6", "#77b2ed"), 
+                     labels = c("No Diabetes", "Diabetes")) +
+  labs(title = "Insulin and Glucose Levels of People with and without Diabetes", 
+       x = "Glucose Level", 
+       y = "Insulin Level", 
+       color = "Diabetes?") +
+theme(
+  axis.title.x = element_text(face = "bold"),
+  axis.title.y = element_text(face = "bold"),
+  axis.text.x = element_text(face = "bold"),
+  axis.text.y = element_text(face = "bold"),
+  legend.title = element_text(face = "bold"),
+  panel.grid = element_blank())
+
+```
+
+**Analysis:**
+
+ 
+
+## Factor 3
+
+```{r}
+bmi_y |>
+  ggplot(aes(x = Outcome, y = BMI, fill = factor(Outcome))) +
+  geom_boxplot() + 
+  scale_fill_manual(values = c("#bfabd6", "#77b2ed"),
+                    labels = c("No Diabetes", "Diabetes")) +
+  labs(title = "BMI Levels for People with and without Diabetes",
+       x = "",
+       y = "BMI",
+       fill = "Diabetes?") +
+  theme_classic() +
+  theme(plot.title = element_text(face = "bold", size = 14),
+        axis.text.x = element_blank(), 
+        axis.ticks.x = element_blank())
+```
+
+**Analysis:**
+
+ 
+
+## Factor 4
+
+```{r}
+bp_y |>
+  ggplot(aes(x = Outcome, y = BloodPressure, fill = factor(Outcome))) +
+  geom_boxplot() +
+  scale_fill_manual(values = c("#bfabd6", "#77b2ed"),
+                    labels = c("No Diabetes", "Diabetes")) +
+  labs(title = "Blood Pressure Levels for People with and without Diabetes",
+       x = "",
+       y = "Blood Pressure",
+       fill = "Diabetes?") +
+  theme_classic() +
+  theme(plot.title = element_text(face = "bold", size = 14),
+        axis.text.x = element_blank(), 
+        axis.ticks.x = element_blank())
+```
+
+**Analysis:**

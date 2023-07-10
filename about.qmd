@@ -1,9 +1,15 @@
 ---
-title: "About"
+title: "About "
 ---
 
-About this site
+ 
 
-```{r}
-1 + 1
-```
+## About Me
+
+Hello! My name is Vibha Dara and I am a rising senior at Neuqua Valley High School in Illinois. I am very passionate about Computer Science and Statistics which is what I hope to be majoring in and working in in the future. My hobbies include swimming, playing badminton, listening to music, and hanging out with friends.
+
+ 
+
+## About This Project
+
+I was able to make this website through the [Kane's Free Data Science Course](https://bootcamp.davidkane.info) which teaches the basics of data science and statistics!

@@ -1,16 +1,58 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Baby Names",
-    "section": "",
-    "text": "This is an example using the baby names data."
+    "objectID": "about.html#about-me",
+    "href": "about.html#about-me",
+    "title": "About",
+    "section": "About Me",
+    "text": "About Me\nHello! My name is Vibha Dara and I am a rising senior at Neuqua Valley High School in Illinois. I am very passionate about Computer Science and Statistics which is what I hope to be majoring in and working in in the future. My hobbies include swimming, playing badminton, listening to music, and hanging out with friends."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
+    "objectID": "about.html#about-this-project",
+    "href": "about.html#about-this-project",
     "title": "About",
+    "section": "About This Project",
+    "text": "About This Project\nI was able to make this website through the Kane’s Free Data Science Course which teaches the basics of data science and statistics!"
+  },
+  {
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "Diabetes Analysis",
+    "section": "Introduction",
+    "text": "Introduction\nAccording to the Centers for Disease Control and Prevention (CDC), diabetes is one of the top 10 leading causes of death in the U.S. and more than 37 million people in the U.S. have diabetes. Below is an image of how diabetes among Americans is growing immensely as the years go on. I’ll first see if diabetes is more prevalent in a particular age or gender and then analyze potential factors that contribute to this disease."
+  },
+  {
+    "objectID": "index.html#age-and-gender",
+    "href": "index.html#age-and-gender",
+    "title": "Diabetes Analysis",
+    "section": "Age and Gender",
+    "text": "Age and Gender\n\n\n\n\n\nTake-away: It is more common for females to have diabetes than males. As age increases, the likeliness of getting diabetes becomes higher and higher. There is a spike at around 80 years old with almost 14 percent of the sample having the disease."
+  },
+  {
+    "objectID": "index.html#factors-1-2",
+    "href": "index.html#factors-1-2",
+    "title": "Diabetes Analysis",
+    "section": "Factors 1 & 2",
+    "text": "Factors 1 & 2\n\n\n\n\n\nAnalysis:"
+  },
+  {
+    "objectID": "index.html#factor-3",
+    "href": "index.html#factor-3",
+    "title": "Diabetes Analysis",
+    "section": "Factor 3",
+    "text": "Factor 3\n\n\n\n\n\nAnalysis:"
+  },
+  {
+    "objectID": "index.html#factor-4",
+    "href": "index.html#factor-4",
+    "title": "Diabetes Analysis",
+    "section": "Factor 4",
+    "text": "Factor 4\n\n\n\n\n\nAnalysis:"
+  },
+  {
+    "objectID": "sources.html",
+    "href": "sources.html",
+    "title": "Sources",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "Data\n\nI got my datasets off of Kaggle and below are all the links I used for this website.\n\n\nURLs\n\n\nhttps://www.kaggle.com/datasets/akshaydattatraykhare/diabetes-dataset\nhttps://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-dataset\nhttps://www.cdc.gov/diabetes/library/reports/reportcard/national-state-diabetes-trends.html"
   }
 ]

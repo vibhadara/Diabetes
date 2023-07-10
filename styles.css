@@ -1,1 +1,18 @@
 /* css styles */
+
+.navbar {
+  background-color: rgb(235, 243, 252);
+  height: 55px;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.navbar-title {
+  font-size: 19px;
+}
+
+a {
+  color: grey;
+}
+
+
