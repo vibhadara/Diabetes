@@ -13,4 +13,3 @@ Hello! My name is Vibha Dara and I am a rising senior at Neuqua Valley High Scho
 ## About This Project
 
 I was able to make this website through the [Kane's Free Data Science Course](https://bootcamp.davidkane.info) which teaches the basics of data science and statistics!
- 
