@@ -11,6 +11,7 @@ This is an example using the baby names data.
 ```{r}
 library(tidyverse)
 library(babynames)
+library(knitr)
 ```
 
 ```{r}
