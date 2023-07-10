@@ -13,7 +13,7 @@ website:
         text: Sources
       - about.qmd
       - icon: github
-        href: https://github.com/
+        href: https://github.com/vibhadara/Diabetes
         aria-label: GitHub
       
       

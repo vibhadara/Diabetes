@@ -35,53 +35,11 @@
     "text": "Introduction\nAccording to the Centers for Disease Control and Prevention (CDC), diabetes is one of the top 10 leading causes of death in the U.S. and more than 37 million people in the U.S. have diabetes. Below is an image of how diabetes among Americans is growing immensely as the years go on. I’ll first see if diabetes is more prevalent in a particular age or gender and then analyze potential factors that contribute to this disease."
   },
   {
-    "objectID": "index.html#age-and-gender",
-    "href": "index.html#age-and-gender",
-    "title": "Diabetes Analysis",
-    "section": "Age and Gender",
-    "text": "Age and Gender\n\n\n\n\n\nTake-away: It is more common for females to have diabetes than males. As age increases, the likeliness of getting diabetes becomes higher and higher. There is a spike at around 80 years old with almost 14 percent of the sample having the disease."
-  },
-  {
-    "objectID": "index.html#factors-1-2",
-    "href": "index.html#factors-1-2",
-    "title": "Diabetes Analysis",
-    "section": "Factors 1 & 2",
-    "text": "Factors 1 & 2\n\n\n\n\n\nAmong individuals with glucose levels below 100 in this sample, diabetic patients have higher insulin levels compared to non-diabetic patients. However, for individuals with glucose levels exceeding 100, diabetic patients show lower insulin levels in comparison to non-diabetic patients, indicating a potential impairment in glucose regulation among individuals with diabetes."
-  },
-  {
-    "objectID": "index.html#factor-3",
-    "href": "index.html#factor-3",
-    "title": "Diabetes Analysis",
-    "section": "Factor 3",
-    "text": "Factor 3\n\n\n\n\n\nThe higher position of the boxplot for the diabetes group suggests a correlation between diabetes and higher BMI levels as there would be a disruption in glucose metabolism."
-  },
-  {
-    "objectID": "index.html#factor-4",
-    "href": "index.html#factor-4",
-    "title": "Diabetes Analysis",
-    "section": "Factor 4",
-    "text": "Factor 4\n\n\n\n\n\nThe boxplot for the diabetes group is only slightly higher than that of the non-diabetes group which suggests a weak correlation between diabetes and blood pressure levels. There could be other factors that play a more significant role in influencing blood pressure outcomes."
-  },
-  {
-    "objectID": "sources.html",
-    "href": "sources.html",
-    "title": "Sources",
-    "section": "",
-    "text": "Data\n\nI got my datasets off of Kaggle and below are all the links I used for this website.\n\n\nURLs\n\n\nhttps://www.kaggle.com/datasets/akshaydattatraykhare/diabetes-dataset\nhttps://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-dataset\nhttps://www.cdc.gov/diabetes/library/reports/reportcard/national-state-diabetes-trends.html"
-  },
-  {
-    "objectID": "models.html",
-    "href": "models.html",
-    "title": "Models",
-    "section": "",
-    "text": "Take-away: It is more common for females to have diabetes than males. As age increases, the likeliness of getting diabetes becomes higher and higher. There is a spike at around 80 years old with almost 14 percent of the sample having the disease."
-  },
-  {
     "objectID": "models.html#age-and-gender",
     "href": "models.html#age-and-gender",
     "title": "Models",
-    "section": "",
-    "text": "Take-away: It is more common for females to have diabetes than males. As age increases, the likeliness of getting diabetes becomes higher and higher. There is a spike at around 80 years old with almost 14 percent of the sample having the disease."
+    "section": "Age and Gender",
+    "text": "Age and Gender\n\n\n\n\n\nTake-away: It is more common for females to have diabetes than males. As age increases, the likeliness of getting diabetes becomes higher and higher. There is a spike at around 80 years old with almost 14 percent of the sample having the disease."
   },
   {
     "objectID": "models.html#factors-1-2",
@@ -103,5 +61,12 @@
     "title": "Models",
     "section": "Factor 4",
     "text": "Factor 4\n\n\n\n\n\nThe boxplot for the diabetes group is only slightly higher than that of the non-diabetes group which suggests a weak correlation between diabetes and blood pressure levels. There could be other factors that play a more significant role in influencing blood pressure outcomes."
+  },
+  {
+    "objectID": "sources.html",
+    "href": "sources.html",
+    "title": "Sources",
+    "section": "",
+    "text": "Data\n\nI got my datasets off of Kaggle and below are all the links I used for this website.\n\n\nURLs\n\n\nhttps://www.kaggle.com/datasets/akshaydattatraykhare/diabetes-dataset\nhttps://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-dataset\nhttps://www.cdc.gov/diabetes/library/reports/reportcard/national-state-diabetes-trends.html"
   }
 ]
