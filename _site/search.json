@@ -28,6 +28,27 @@
     "text": "About This Project\nI was able to make this website through the Kane’s Free Data Science Course which teaches the basics of data science and statistics with R!"
   },
   {
+    "objectID": "graphs.html#factors-1-2",
+    "href": "graphs.html#factors-1-2",
+    "title": "Graphs",
+    "section": "Factors 1 & 2",
+    "text": "Factors 1 & 2\n\n\n\n\n\nAmong individuals with glucose levels below 100 in this sample, diabetic patients have higher insulin levels compared to non-diabetic patients. However, for individuals with glucose levels exceeding 100, diabetic patients show lower insulin levels in comparison to non-diabetic patients, indicating a potential impairment in glucose regulation among individuals with diabetes."
+  },
+  {
+    "objectID": "graphs.html#factor-3",
+    "href": "graphs.html#factor-3",
+    "title": "Graphs",
+    "section": "Factor 3",
+    "text": "Factor 3\n\n\n\n\n\nThe higher position of the boxplot for the diabetes group suggests a correlation between diabetes and higher BMI levels as there would be a disruption in glucose metabolism."
+  },
+  {
+    "objectID": "graphs.html#factor-4",
+    "href": "graphs.html#factor-4",
+    "title": "Graphs",
+    "section": "Factor 4",
+    "text": "Factor 4\n\n\n\n\n\nThe boxplot for the diabetes group is only slightly higher than that of the non-diabetes group which suggests a weak correlation between diabetes and blood pressure levels. There could be other factors that play a more significant role in influencing blood pressure outcomes."
+  },
+  {
     "objectID": "index.html#introduction",
     "href": "index.html#introduction",
     "title": "Diabetes Analysis",
@@ -39,28 +60,14 @@
     "href": "models.html#age-and-gender",
     "title": "Models",
     "section": "Age and Gender",
-    "text": "Age and Gender\n\n\n\n\n\nTake-away: It is more common for females to have diabetes than males. As age increases, the likeliness of getting diabetes becomes higher and higher. There is a spike at around 80 years old with almost 14 percent of the sample having the disease."
+    "text": "Age and Gender\n\n\n\n\n\nTake-away: It is more common for males to have diabetes than females. As age increases, the likeliness of getting diabetes becomes higher and higher. There is a spike at around 80 years old with almost 14 percent of the sample having the disease."
   },
   {
-    "objectID": "models.html#factors-1-2",
-    "href": "models.html#factors-1-2",
+    "objectID": "models.html#data-model",
+    "href": "models.html#data-model",
     "title": "Models",
-    "section": "Factors 1 & 2",
-    "text": "Factors 1 & 2\n\n\n\n\n\nAmong individuals with glucose levels below 100 in this sample, diabetic patients have higher insulin levels compared to non-diabetic patients. However, for individuals with glucose levels exceeding 100, diabetic patients show lower insulin levels in comparison to non-diabetic patients, indicating a potential impairment in glucose regulation among individuals with diabetes."
-  },
-  {
-    "objectID": "models.html#factor-3",
-    "href": "models.html#factor-3",
-    "title": "Models",
-    "section": "Factor 3",
-    "text": "Factor 3\n\n\n\n\n\nThe higher position of the boxplot for the diabetes group suggests a correlation between diabetes and higher BMI levels as there would be a disruption in glucose metabolism."
-  },
-  {
-    "objectID": "models.html#factor-4",
-    "href": "models.html#factor-4",
-    "title": "Models",
-    "section": "Factor 4",
-    "text": "Factor 4\n\n\n\n\n\nThe boxplot for the diabetes group is only slightly higher than that of the non-diabetes group which suggests a weak correlation between diabetes and blood pressure levels. There could be other factors that play a more significant role in influencing blood pressure outcomes."
+    "section": "Data Model",
+    "text": "Data Model\n\n\nstan_glm\n family:       binomial [logit]\n formula:      diabetes ~ age + gender\n observations: 1250\n predictors:   3\n------\n            Median MAD_SD\n(Intercept) -4.70   0.35 \nage          0.04   0.01 \ngenderMale   0.40   0.20 \n\n------\n* For help interpreting the printed output see ?print.stanreg\n* For info on the priors used see ?prior_summary.stanreg\n\n\nAnalysis: The age and genderMale median being positive shows that males are more likely to have diabetes than females and that the likeliness of diabetes increases with age. However, the median absolute deviation indicates that there is some uncertainty regarding the association between gender, age, and diabetes."
   },
   {
     "objectID": "sources.html",

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Diabetes - Models</title>
+<title>Diabetes - Graphs</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -86,11 +86,11 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./models.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="./models.html" rel="" target="">
  <span class="menu-text">Models</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./graphs.html" rel="" target="">
+    <a class="nav-link active" href="./graphs.html" rel="" target="" aria-current="page">
  <span class="menu-text">Graphs</span></a>
   </li>  
   <li class="nav-item">
@@ -122,8 +122,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#age-and-gender" id="toc-age-and-gender" class="nav-link active" data-scroll-target="#age-and-gender">Age and Gender</a></li>
-  <li><a href="#data-model" id="toc-data-model" class="nav-link" data-scroll-target="#data-model">Data Model</a></li>
+  <li><a href="#factors-1-2" id="toc-factors-1-2" class="nav-link active" data-scroll-target="#factors-1-2">Factors 1 &amp; 2</a></li>
+  <li><a href="#factor-3" id="toc-factor-3" class="nav-link" data-scroll-target="#factor-3">Factor 3</a></li>
+  <li><a href="#factor-4" id="toc-factor-4" class="nav-link" data-scroll-target="#factor-4">Factor 4</a></li>
   </ul>
 </nav>
     </div>
@@ -132,7 +133,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Models</h1>
+<h1 class="title">Graphs</h1>
 </div>
 
 
@@ -148,37 +149,34 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <p>&nbsp;</p>
-<section id="age-and-gender" class="level2">
-<h2 class="anchored" data-anchor-id="age-and-gender">Age and Gender</h2>
+<section id="factors-1-2" class="level2">
+<h2 class="anchored" data-anchor-id="factors-1-2">Factors 1 &amp; 2</h2>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="models_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+<p><img src="graphs_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
-<p><strong>Take-away:</strong> It is more common for males to have diabetes than females. As age increases, the likeliness of getting diabetes becomes higher and higher. There is a spike at around 80 years old with almost 14 percent of the sample having the disease.</p>
+<p>Among individuals with glucose levels below 100 in this sample, diabetic patients have higher insulin levels compared to non-diabetic patients. However, for individuals with glucose levels exceeding 100, diabetic patients show lower insulin levels in comparison to non-diabetic patients, indicating a potential impairment in glucose regulation among individuals with diabetes.</p>
 <p>&nbsp;</p>
 </section>
-<section id="data-model" class="level2">
-<h2 class="anchored" data-anchor-id="data-model">Data Model</h2>
+<section id="factor-3" class="level2">
+<h2 class="anchored" data-anchor-id="factor-3">Factor 3</h2>
 <div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>stan_glm
- family:       binomial [logit]
- formula:      diabetes ~ age + gender
- observations: 1250
- predictors:   3
-------
-            Median MAD_SD
-(Intercept) -4.70   0.35 
-age          0.04   0.01 
-genderMale   0.40   0.20 
-
-------
-* For help interpreting the printed output see ?print.stanreg
-* For info on the priors used see ?prior_summary.stanreg</code></pre>
+<div class="cell-output-display">
+<p><img src="graphs_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
-<p><strong>Analysis:</strong> The age and genderMale median being positive shows that males are more likely to have diabetes than females and that the likeliness of diabetes increases with age. However, the median absolute deviation indicates that there is some uncertainty regarding the association between gender, age, and diabetes.</p>
+<p>The higher position of the boxplot for the diabetes group suggests a correlation between diabetes and higher BMI levels as there would be a disruption in glucose metabolism.</p>
+<p>&nbsp;</p>
+</section>
+<section id="factor-4" class="level2">
+<h2 class="anchored" data-anchor-id="factor-4">Factor 4</h2>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="graphs_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>The boxplot for the diabetes group is only slightly higher than that of the non-diabetes group which suggests a weak correlation between diabetes and blood pressure levels. There could be other factors that play a more significant role in influencing blood pressure outcomes.</p>
 
 
 </section>
